@@ -61,12 +61,13 @@ layout: default
   * Loan Repository is a simple in memory list of Loans
   * Loan model
       * Id (integer)
-      * Full name (string)
-      * Purpose (string)
-      * Amount (decimal)
+      * Requester full name (string, 128 chars)
+      * Purpose (string, 255 chars)
+      * Amount (positive decimal)
 4. Create Integration Test that checks if CRUD operations are performed correctly
 5. Localize application
 6. Use properties placeholder that reads environment / commandline properties
+	* In the command line store application name that will be displayed in the console when application starts. Remember to create Service for that!
 
 ## Spring JDBC
 
@@ -85,26 +86,26 @@ layout: default
 ## Spring MVC
 
 1. Create web project
-2. Create home page with welcome title
+2. Create home page with welcome title. 
+	* Display application name that will be stored in environment variable
 3. Add menu to home and all new pages, that holds links to:
- * Homepage
- * List of loans
- * Form for new loan request
- 
-4. Create loan request page that:
+	* Homepage
+    * List of loans
+    * Form for new loan request
+4. Create loan list page
+	* Display all loans in the grid
+	* Add action column with delete, edit action
+5. Create loan request page that:
 	* Will display new loan request form
-        * Full name (text field, string, max 100 char)
-        * Purpose (text area, string, max 1023 char)
-        * Amount (text field, positive decimal)
-    * Loan request 
-
-5. Stylize page using Bootstrap 3
+	* Will validate loan form
+6. Create REST endpoints for loans
+7. Stylize page using Bootstrap 3
 
 ## Spring Security
 
 1. Secure application with Spring Security
-
-# Dependencies
-
-## Spring Core
-
+	* Restrict browsing loans only for logged users (USERs and ADMINs)
+	* Only users with ADMIN role can edit and delete loans
+	* All users can request for a new loan (GUESTs, USERs, ADMINs)
+2. Customize login page
+3. Create registering new users page

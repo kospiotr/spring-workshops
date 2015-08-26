@@ -107,14 +107,18 @@
 
 <ul>
 <li>Id (integer)</li>
-<li>Full name (string)</li>
-<li>Purpose (string)</li>
-<li>Amount (decimal)</li>
+<li>Requester full name (string, 128 chars)</li>
+<li>Purpose (string, 255 chars)</li>
+<li>Amount (positive decimal)</li>
 </ul></li>
 </ul></li>
 <li>Create Integration Test that checks if CRUD operations are performed correctly</li>
 <li>Localize application</li>
-<li>Use properties placeholder that reads environment / commandline properties</li>
+<li>Use properties placeholder that reads environment / commandline properties
+
+<ul>
+<li>In the command line store application name that will be displayed in the console when application starts. Remember to create Service for that!</li>
+</ul></li>
 </ol>
 
 <h2 id="spring-jdbc">Spring JDBC</h2>
@@ -141,38 +145,47 @@
 
 <ol>
 <li>Create web project</li>
-<li>Create home page with welcome title</li>
-<li><p>Add menu to home and all new pages, that holds links to:</p>
+<li>Create home page with welcome title. 
+
+<ul>
+<li>Display application name that will be stored in environment variable</li>
+</ul></li>
+<li>Add menu to home and all new pages, that holds links to:
 
 <ul>
 <li>Homepage</li>
 <li>List of loans</li>
 <li>Form for new loan request</li>
 </ul></li>
-<li><p>Create loan request page that:</p>
+<li>Create loan list page
 
 <ul>
-<li>Will display new loan request form
+<li>Display all loans in the grid</li>
+<li>Add action column with delete, edit action</li>
+</ul></li>
+<li>Create loan request page that:
 
 <ul>
-<li>Full name (text field, string, max 100 char)</li>
-<li>Purpose (text area, string, max 1023 char)</li>
-<li>Amount (text field, positive decimal)</li>
+<li>Will display new loan request form</li>
+<li>Will validate loan form</li>
 </ul></li>
-<li>Loan request </li>
-</ul></li>
-<li><p>Stylize page using Bootstrap 3</p></li>
+<li>Create REST endpoints for loans</li>
+<li>Stylize page using Bootstrap 3</li>
 </ol>
 
 <h2 id="spring-security">Spring Security</h2>
 
 <ol>
-<li>Secure application with Spring Security</li>
+<li>Secure application with Spring Security
+
+<ul>
+<li>Restrict browsing loans only for logged users (USERs and ADMINs)</li>
+<li>Only users with ADMIN role can edit and delete loans</li>
+<li>All users can request for a new loan (GUESTs, USERs, ADMINs)</li>
+</ul></li>
+<li>Customize login page</li>
+<li>Create registering new users page</li>
 </ol>
-
-<h1 id="dependencies">Dependencies</h1>
-
-<h2 id="spring-core">Spring Core</h2>
 
 </section>
 
