@@ -37,20 +37,20 @@ layout: default
 # Technical documentation
 
 * Maven
-  * [Create standalone project]({{site.kospiotrPageURL}}wiki/maven.html#standalone-project)
-  * [Create web project]({{site.kospiotrPageURL}}wiki/maven.html#web-project)
+  * [Create standalone project]({{site.kospiotrPageURL}}wiki/maven#standalone-project)
+  * [Create web project]({{site.kospiotrPageURL}}wiki/maven#web-project)
 * Set up runtime environments
-  * [Jetty embedded server for web application development purposes]({{site.kospiotrPageURL}}wiki/maven.html#jetty)
-  * [Tomcat standalone server for web application local testing purposes]({{site.kospiotrPageURL}}wiki/tomcat.html)
-  * [Derby embedded DB for development purposes]({{site.kospiotrPageURL}}wiki/maven.html#database)
-* [Spring Core]({{site.kospiotrPageURL}}wiki/spring-core.html)
-* [Spring JDBC]({{site.kospiotrPageURL}}wiki/spring-jdbc.html)
-* [Spring Data]({{site.kospiotrPageURL}}wiki/spring-data.html)
-* [Spring AOP]({{site.kospiotrPageURL}}wiki/spring-aop.html)
-* [Spring MVC]({{site.kospiotrPageURL}}wiki/spring-mvc.html)
-* [Spring Security]({{site.kospiotrPageURL}}wiki/spring-security.html)
+  * [Jetty embedded server for web application development purposes]({{site.kospiotrPageURL}}wiki/maven#jetty)
+  * [Tomcat standalone server for web application local testing purposes]({{site.kospiotrPageURL}}wiki/tomcat)
+  * [Derby embedded DB for development purposes]({{site.kospiotrPageURL}}wiki/maven#database)
+* [Spring Core]({{site.kospiotrPageURL}}wiki/spring-core-presentation)
+* [Spring JDBC]({{site.kospiotrPageURL}}wiki/spring-jdbc)
+* [Spring Data]({{site.kospiotrPageURL}}wiki/spring-data)
+* [Spring AOP]({{site.kospiotrPageURL}}wiki/spring-aop)
+* [Spring MVC]({{site.kospiotrPageURL}}wiki/spring-mvc)
+* [Spring Security]({{site.kospiotrPageURL}}wiki/spring-security)
 
-#Tasks
+# Tasks
 
 ## Spring Core
 
